@@ -1,0 +1,36 @@
+﻿@{
+    ViewBag.Title = "About";
+    Layout = "~/Views/Shared/_mytemplate.cshtml";
+}
+
+<div class="left">
+   <h1 class="pagetitle"><text style="color:#3ec2cf"> IMPACT </text>DASHBOARD</h1>
+
+        <div class="row">
+
+            <div class="left">
+                <div class="aboutcolumn">
+                    <h2 class="aboutheader" style="color:white">ABOUT</h2>
+                    <p>
+                        City Year is making headlines for our work within the schools and communities where we serve. Here you can read what others have to say about us on a local and national level, and how we are impacting lives in the classroom and beyond.
+                        Jacksonville is a growing city of around 850,000 with a strong economy that is diversified among technical, manufacturing and service industries. Inc. magazine ranked Jacksonville #8 on its list of Top Cities for Doing Business in America.
+                        Our Jacksonville organization is led by a group of dedicated and inspiring professionals who are committed to ensuring that City Year makes significant impact in helping students who are at risk stay on track to graduate on time. Our leadership is comprised of business professionals, community leaders, and devoted alumni.
+                        We're looking for highly passionate and motivated professionals who believe in our mission. If you're interested in joining our highly skilled team, please browse our open career opportunities.
+                    </p>
+                </div>
+                <div class="linkscolumn">
+                    <h2 class="linksheader" style="color:white">CONTENT LINKS</h2>
+                    <ul>
+                        <li>@Html.ActionLink("Home", "Index", "Home")</li>
+                        <li>@Html.ActionLink("Admin", "Admin", "Home")</li>
+                        <li>@Html.ActionLink("Service Delivery", "Index", "ServiceDeliveries")</li>
+                        <li>@Html.ActionLink("Corps Member Experience", "CorpMemberExperience", "Home")</li>
+                        <li>@Html.ActionLink("External Affairs", "ExternalAffairs", "Home")</li>
+                        <li>@Html.ActionLink("Revenue", "Revenue", "Home")</li>
+                        <li>@Html.ActionLink("OPEX", "OPEX", "Home")</li>
+                        <li>@Html.ActionLink("RAD", "RAD", "Home")</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+</div>
