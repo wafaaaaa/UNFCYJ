@@ -12,15 +12,13 @@ namespace CYJ.Models
     using System;
     using System.Collections.Generic;
     
-    public partial class CONNECTION
+    public partial class SUBCATEGORY_GOALS
     {
-        public int connectionID { get; set; }
-        public Nullable<int> teamID { get; set; }
-        public Nullable<int> workstreamID { get; set; }
+        public int subcategory_goalsID { get; set; }
         public Nullable<int> goalID { get; set; }
+        public Nullable<int> subcategoryID { get; set; }
     
         public virtual GOAL GOAL { get; set; }
-        public virtual TEAM TEAM { get; set; }
-        public virtual WORKSTREAM WORKSTREAM { get; set; }
+        public virtual SUBCATEGORY SUBCATEGORY { get; set; }
     }
 }

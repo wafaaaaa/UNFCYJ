@@ -182,9 +182,6 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Models\ACTUAL.cs">
-      <DependentUpon>UNFCYJ.tt</DependentUpon>
-    </Compile>
     <Compile Include="Models\AspNetRole.cs">
       <DependentUpon>UNFCYJ.tt</DependentUpon>
     </Compile>
@@ -215,7 +212,13 @@
     <Compile Include="Models\SUBCATEGORY.cs">
       <DependentUpon>UNFCYJ.tt</DependentUpon>
     </Compile>
+    <Compile Include="Models\SUBCATEGORY_GOALS.cs">
+      <DependentUpon>UNFCYJ.tt</DependentUpon>
+    </Compile>
     <Compile Include="Models\TEAM.cs">
+      <DependentUpon>UNFCYJ.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\TEAM_WORKSTREAM.cs">
       <DependentUpon>UNFCYJ.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\UNFCYJ.Context.cs">
@@ -237,7 +240,6 @@
       <DependentUpon>UNFCYJ.tt</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Services\ActualServices.cs" />
     <Compile Include="Services\CategoryServices.cs" />
     <Compile Include="Services\ConnectionServices.cs" />
     <Compile Include="Services\GoalServices.cs" />

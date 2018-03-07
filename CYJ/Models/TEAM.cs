@@ -18,7 +18,7 @@ namespace CYJ.Models
         public TEAM()
         {
             this.CONNECTIONs = new HashSet<CONNECTION>();
-            this.WORKSTREAMs = new HashSet<WORKSTREAM>();
+            this.TEAM_WORKSTREAM = new HashSet<TEAM_WORKSTREAM>();
         }
     
         public int teamID { get; set; }
@@ -27,6 +27,6 @@ namespace CYJ.Models
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<CONNECTION> CONNECTIONs { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<WORKSTREAM> WORKSTREAMs { get; set; }
+        public virtual ICollection<TEAM_WORKSTREAM> TEAM_WORKSTREAM { get; set; }
     }
 }

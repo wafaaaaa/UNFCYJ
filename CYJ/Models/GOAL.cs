@@ -18,14 +18,17 @@ namespace CYJ.Models
         public GOAL()
         {
             this.CONNECTIONs = new HashSet<CONNECTION>();
+            this.SUBCATEGORY_GOALS = new HashSet<SUBCATEGORY_GOALS>();
         }
     
         public int goalID { get; set; }
         public string goalName { get; set; }
-        public Nullable<int> goalNum { get; set; }
-        public Nullable<System.DateTime> goalDate { get; set; }
+        public Nullable<System.DateTime> startDate { get; set; }
+        public Nullable<System.DateTime> endDate { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<CONNECTION> CONNECTIONs { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<SUBCATEGORY_GOALS> SUBCATEGORY_GOALS { get; set; }
     }
 }

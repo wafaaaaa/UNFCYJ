@@ -12,14 +12,12 @@ namespace CYJ.Models
     using System;
     using System.Collections.Generic;
     
-    public partial class CONNECTION
+    public partial class TEAM_WORKSTREAM
     {
-        public int connectionID { get; set; }
+        public int team_workstreamID { get; set; }
         public Nullable<int> teamID { get; set; }
         public Nullable<int> workstreamID { get; set; }
-        public Nullable<int> goalID { get; set; }
     
-        public virtual GOAL GOAL { get; set; }
         public virtual TEAM TEAM { get; set; }
         public virtual WORKSTREAM WORKSTREAM { get; set; }
     }

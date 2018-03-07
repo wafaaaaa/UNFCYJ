@@ -22,7 +22,7 @@ namespace CYJ.Services
         {
             _dbContext.Configuration.ProxyCreationEnabled = false;
 
-            return _dbContext.WORKSTREAMs.Where(x => x.teamID == teamID).ToList();
+            return _dbContext.WORKSTREAMs.Where(x => x.workstreamID== teamID).ToList();
         }
         public WORKSTREAM GetWStreamsById(int id)
         {

@@ -20,7 +20,7 @@ namespace CYJ.Services
 
         public CONNECTION GetConnectionById(int id)
         {
-            return _dbContext.CONNECTIONs.SingleOrDefault(t => t.connectID == id);
+            return _dbContext.CONNECTIONs.SingleOrDefault(t => t.connectionID == id);
         }
 
         public void Dispose()

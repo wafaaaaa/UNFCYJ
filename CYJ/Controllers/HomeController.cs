@@ -16,7 +16,6 @@ namespace UNFDash.Controllers
         private readonly CategoryServices _categoryServices;
         private readonly SubcategoryServices _subCategoryServices;
         private readonly GoalServices _goalServices;
-        private readonly ActualServices _actualServices;
         private readonly ConnectionServices _connectionServices;
 
         public HomeController()
@@ -26,7 +25,6 @@ namespace UNFDash.Controllers
             _categoryServices = new CategoryServices();
             _subCategoryServices = new SubcategoryServices();
             _goalServices = new GoalServices();
-            _actualServices = new ActualServices();
             _connectionServices = new ConnectionServices();
         }
         public ActionResult Index()
