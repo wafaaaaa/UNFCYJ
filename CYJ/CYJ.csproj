@@ -177,6 +177,7 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
+    <Compile Include="Controllers\AboutController.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Global.asax.cs">
@@ -695,6 +696,12 @@
     <Content Include="Views\Shared\_mytemplate.cshtml" />
     <Content Include="Views\Shared\_dashboard.cshtml" />
     <Content Include="Views\Home\Admin.cshtml" />
+    <Content Include="Views\About\Create.cshtml" />
+    <Content Include="Views\About\Delete.cshtml" />
+    <Content Include="Views\About\Details.cshtml" />
+    <Content Include="Views\About\Edit.cshtml" />
+    <Content Include="Views\About\Index.cshtml" />
+    <Content Include="Views\About\Home.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
