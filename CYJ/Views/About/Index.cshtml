@@ -5,8 +5,8 @@
         Layout = "~/Views/Shared/_mytemplate.cshtml";
 }
 
-<h2>ABOUT</h2>
-
+<h2 class="aboutheader" style="color:white;">ABOUT</h2>
+<br />
 <p>
     @Html.ActionLink("Write a Post", "Create")
 </p>
@@ -17,12 +17,6 @@
         </th>
         <th>
             @Html.DisplayNameFor(model => model.postContent)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.createTime)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.updateTime)
         </th>
         <th></th>
     </tr>
@@ -35,12 +29,6 @@
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.postContent)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.createTime)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.updateTime)
             </td>
             <td>
                 @Html.ActionLink("Edit", "Edit", new { id = item.postID }) |
