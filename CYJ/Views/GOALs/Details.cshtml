@@ -1,0 +1,81 @@
+﻿@model CYJ.Models.GOAL
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_mytemplate.cshtml";
+}
+<h1 style="color:deepskyblue">Details</h1>
+<div>
+    <h4>GOAL</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.goalName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.goalName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.goalValue)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.goalValue)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FYstart)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FYstart)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FYend)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FYend)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.subcategory)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.subcategory)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.category)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.category)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.workstream)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.workstream)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.team)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.team)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.goalID }) |
+    @Html.ActionLink("Back to Goals", "Home")
+</p>

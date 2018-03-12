@@ -1,0 +1,73 @@
+﻿@model CYJ.Models.GOAL
+
+@{
+    Layout = "~/Views/Shared/_mytemplate.cshtml";
+}
+
+<h1 style="color:deepskyblue">Goals</h1>
+@using (Html.BeginForm("FilterByGoal", "GOALs", FormMethod.Get))
+{
+    @*Html.TextBox("searching")
+    <input type="submit" value="Search" />
+    <br />*@
+}
+    <div class="container" style="width:40%;">
+        @Html.TextBoxFor(model => model.goalName, new { @class = "form-control", @placeholder = "Filter by Goal Name" })
+        <br />
+        <input type="Submit" name="goalName" value="Search" class="btn btn-primary" />
+    </div>
+        <table class="table">
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.goalName)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.goalValue)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.FYstart)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.FYend)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.subcategory)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.category)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.workstream)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.team)
+                </th>
+            </tr>
+            <tr>
+                <td>
+                    @Html.DisplayFor(model => model.goalName)
+                </td>
+                <td>
+                    @Html.DisplayFor(model => model.goalValue)
+                </td>
+                <td>
+                    @Html.DisplayFor(model => model.FYstart)
+                </td>
+                <td>
+                    @Html.DisplayFor(model => model.FYend)
+                </td>
+                <td>
+                    @Html.DisplayFor(model => model.subcategory)
+                </td>
+                <td>
+                    @Html.DisplayFor(model => model.category)
+                </td>
+                <td>
+                    @Html.DisplayFor(model => model.workstream)
+                </td>
+                <td>
+                    @Html.DisplayFor(model => model.team)
+                </td>
+            </tr>
+        </table>
+
