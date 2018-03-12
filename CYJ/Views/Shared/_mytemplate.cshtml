@@ -1,13 +1,8 @@
-﻿<!DOCTYPE html>
-<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet">
-<html>
-
+﻿<!doctype html>
+<html lang="en">
 <head>
-   
     <!--Template Header-->
     <meta name="viewport" content="width=device-width" />
-
     <meta charset="utf-8" />
     <link rel="apple-touch-icon" sizes="76x76" href="@Url.Content("~/Content/mytemplate/")img/apple-icon.png" />
     <link rel="icon" type="image/png" href="@Url.Content("~/Content/mytemplate/")img/favicon.png" />
@@ -23,7 +18,8 @@
     <link href="@Url.Content("~/Content/mytemplate/")css/demo.css" rel="stylesheet" />
     <!--     Fonts and icons     -->
     <link href="http://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet">
-    <link href='http://fonts.googleapis.com/css?family=Roboto:400,700,300|Material+Icons' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
 
     <!--Template Scripts -->
     <!--   Core JS Files   -->
@@ -53,10 +49,10 @@
         });
     </script>
 
-  
 </head>
-<body onresize = "myFunction()">
+<body>
     <div class="wrapper">
+<<<<<<< HEAD
         <div class="main-panel">
             <div class="scroll">
             <!-- changes sidebars color and background image-->
@@ -110,29 +106,86 @@
             <div class="navbar-fixed-top">
                 <div class="collapse navbar-collapse">
                     @Html.Partial("_LoginPartial")
-                </div>
+=======
+        <div class="sidebar" data-color="red" data-image="@Url.Content("~/Content/Images/citysidebar.jpg")">
+            <!--
+                Tip 1: You can change the color of the sidebar using: data-color="purple | blue | green | orange | red"
+
+                Tip 2: you can also add an image using data-image tag
+            -->
+            <div class="logo">
+                <a href="https://www.cityyear.org/jacksonville" class="simple-text">
+                    City Year Jax
+                </a>
+                <img src="~/Content/Images/CITYYEARLOGO.png" alt="LOGO" style="width:200px;height:200px;" />
+
             </div>
+            <div class="sidebar-wrapper">
+                <ul class="nav">
+                    <li><a href="@Url.Action("Index", "Home")"><i class="material-icons md-18">home</i> HOME</a></li>
 
-            <!-- End Top Nav Bar-->
+                    <li><a href="@Url.Action("Home", "About")"><i class="material-icons md-18">location_city</i>ABOUT</a></li>
 
-            <div>
-                @RenderBody()
+                    <li><a href="@Url.Action("Admin", "Home")"><i class="material-icons md-18">verified_user</i>ADMIN</a></li>
 
+                    <li><a href="@Url.Action("Index", "Home")"><i class="material-icons md-18">school</i>SERVICE DELIVERY</a></li>
 
-                
+                    <li><a href="@Url.Action("Index", "Home")"><i class="material-icons md-18">group</i>CORP MEMBER EXPERIENCE</a></li>
+
+                    <li><a href="@Url.Action("Index", "Home")"><i class="material-icons md-18">event</i>EXTERNAL AFFAIRS</a></li>
+                    <li><a href="@Url.Action("Index", "Home")"><i class="material-icons md-18">local_atm</i>REVENUE</a></li>
+                    <li><a href="@Url.Action("Index", "Home")"><i class="material-icons md-18">settings</i>OPEX</a></li>
+                    <li><a href="@Url.Action("Index", "Home")"><i class="material-icons md-18">assignment</i>RAD</a></li>
+                </ul>
 
             </div>
         </div>
-        <hr />
-        
-    </div>
+        <div class="main-panel">
+            <nav class="navbar navbar-transparent navbar-absolute">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="#"> City Year Jax | Dashboard </a>
+                    </div>
+                    <div class="collapse navbar-collapse">
+                        <ul class="nav navbar-nav navbar-right">
+                            <li>
+                                <i class="material-icons md-36">person_pin</i> @Html.Partial("_LoginPartial")
+                            </li>
+                       
+                        </ul>
+                       
+                    </div>
+>>>>>>> d08ac8d95ec73cb2ec8b99791efda3d49213f3cd
+                </div>
+            </nav>
 
+            <!-- main content -->
+            <div class="content">
+                <div class="container-fluid">
+                    @RenderBody()
+                </div>
+            </div>
+            <footer class="footer">
+                <div class="container-fluid">
+                    <nav class="pull-left">
+                    </nav>
+                    <p class="copyright pull-right">
+                        &copy;
+                        <script>
+                            document.write(new Date().getFullYear())
+                        </script>
+                        <a href="https://www.cityyear.org/jacksonville">City Year Jacksonville</a>
+                    </p>
+                </div>
+            </footer>
+        </div>
     </div>
-
 </body>
 
-
 </html>
-<footer>
-    <Center> <p>&copy; @DateTime.Now.Year City Year Jacksonville</p></Center>
-</footer>

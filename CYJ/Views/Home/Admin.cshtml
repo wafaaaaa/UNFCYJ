@@ -3,6 +3,7 @@
     ViewBag.Title = "Admin";
     Layout = "~/Views/Shared/_mytemplate.cshtml";
 }
+<<<<<<< HEAD
 <body>
     <center>
         <h1>ADMIN</h1>
@@ -16,3 +17,48 @@
         <input type="button" class="button1" value="ADD A NEW ITEM" onclick="@("window.location.href='" + @Url.Action("Add", "Home") + "'");" />
     </center>
     </body>
+=======
+<!doctype html>
+
+
+<div class="content">
+    <div class="container-fluid">
+        <div class="card">
+            <div class="card-header" data-background-color="red">
+                <h4 class="title">ADMIN</h4>
+
+            </div>
+            <div class="card-content"><center>
+
+    <div class="col-md-3">
+        <img src="~/Content/Images/goal_value.png" style="width:100px;height:100px;" />
+
+        <input type="button" class="btn btn-info" value="ADD A GOAL VALUE" onclick="@("window.location.href='" + @Url.Action("Index", "Goal") + "'");" />
+    </div>
+
+    <div class="col-md-3">
+
+        <img src="~/Content/Images/goal_add.png" style="width:100px;height:100px;" />
+        <input type="button" class="btn btn-info" value="ADD A GOAL ACTUAL" onclick="@("window.location.href='" + @Url.Action("Index") + "'");" />
+    </div>
+    <div class="col-md-3">
+
+        <img src="~/Content/Images/about_edit.png" style="width:100px;height:100px;" />
+        <input type="button" class="btn btn-info" value="EDIT ABOUT" onclick="@("window.location.href='" + @Url.Action("Index", "About") + "'");" />
+    </div>
+    <div class="col-md-3">
+
+        <img src="~/Content/Images/add_item.png" style="width:100px;height:100px;" />
+        <input type="button" class="btn btn-info" value="ADD A NEW ITEM" onclick="@("window.location.href='" + @Url.Action("Index") + "'");" />
+    </div>
+
+    <br /> <br /> <br /> <br /> <br />
+
+
+</center>
+                </div>
+                </div>
+            </div>
+</div>
+
+>>>>>>> d08ac8d95ec73cb2ec8b99791efda3d49213f3cd
